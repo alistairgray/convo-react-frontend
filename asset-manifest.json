@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/convo-react-frontend/static/css/main.a96e1ccc.chunk.css",
-    "main.js": "/convo-react-frontend/static/js/main.f1922e98.chunk.js",
-    "main.js.map": "/convo-react-frontend/static/js/main.f1922e98.chunk.js.map",
+    "main.css": "/convo-react-frontend/static/css/main.ca7acfda.chunk.css",
+    "main.js": "/convo-react-frontend/static/js/main.a063d3d4.chunk.js",
+    "main.js.map": "/convo-react-frontend/static/js/main.a063d3d4.chunk.js.map",
     "runtime-main.js": "/convo-react-frontend/static/js/runtime-main.1612a55d.js",
     "runtime-main.js.map": "/convo-react-frontend/static/js/runtime-main.1612a55d.js.map",
     "static/css/2.150d169a.chunk.css": "/convo-react-frontend/static/css/2.150d169a.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.359f840b.chunk.js.map": "/convo-react-frontend/static/js/3.359f840b.chunk.js.map",
     "index.html": "/convo-react-frontend/index.html",
     "static/css/2.150d169a.chunk.css.map": "/convo-react-frontend/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.a96e1ccc.chunk.css.map": "/convo-react-frontend/static/css/main.a96e1ccc.chunk.css.map",
+    "static/css/main.ca7acfda.chunk.css.map": "/convo-react-frontend/static/css/main.ca7acfda.chunk.css.map",
     "static/js/2.c55ac435.chunk.js.LICENSE.txt": "/convo-react-frontend/static/js/2.c55ac435.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1612a55d.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.c55ac435.chunk.js",
-    "static/css/main.a96e1ccc.chunk.css",
-    "static/js/main.f1922e98.chunk.js"
+    "static/css/main.ca7acfda.chunk.css",
+    "static/js/main.a063d3d4.chunk.js"
   ]
 }
