@@ -25,24 +25,24 @@ const scenarioTrees = {
                 commentary: "The conversation so far is still like an interview"
               },
               AAB: {
-                userStatement: 'Very well thatHey ',
-                botResponse: 'responseAAB',
-                commentary: ''
+                userStatement: 'Okay great. Nice to meet you',
+                botResponse: 'Same to you, have a good one.',
+                commentary: 'In this case, the conversation stopped because there is an expectation that Samantha will lead it'
               }
           }, // AA
           AB: {
             userStatement: 'What brings you to this event?',
             botResponse: "I'm here to meet people and learn",
-            commentary: '',
+            commentary: 'This is a good statement to make but try to make the question open',
               ABA: {
-                userStatement: 'userStatementABA',
-                botResponse: 'responseABA',
-                commentary: ''
+                userStatement: 'Same',
+                botResponse: 'Okay great. It was nice talking to you.',
+                commentary: 'In this response, you kept the response short without offering a followup question'
               },
               ABB: {
-                userStatement: 'userStatementABB',
-                botResponse: 'responseABB',
-                commentary: ''
+                userStatement: "That sounds similar to me, I'm excited for the talk on dinosaurs. Are you attending that talk?",
+                botResponse: "Oh I didn't realise they were doing that! No, but I'd like to join if I can.",
+                commentary: 'In this response you have brought your own interests and given Samantha something that it is interested in. You have listened to what it has said and this conversation has enough momentum to keep going.'
               } // ABB
             } // AB
         }, // A
@@ -50,35 +50,35 @@ const scenarioTrees = {
       B: {
         userStatement: "Hi I thought I would come over and introduce myself, I'm Theodore",
         botResponse: "Nice to meet you, I'm Samantha",
-        commentary: '',
+        commentary: 'This is a polite and friendly way to reach out to someone',
           BA: {
-            userStatement: 'userStatementBA',
-            botResponse: 'responseBA',
-            commentary: '',
+            userStatement: "Nice to meet you too. This is quite a cool event isn't it? What are you seeking to get out of it?",
+            botResponse: 'Yes it is. I suppose I am here to meet people and learn from it',
+            commentary: 'You are continuing with the friendly tone and Samantha is keeping up with it.',
               BAA: {
-                userStatement: 'userStatementBAA',
-                botResponse: 'responseBAA',
-                commentary: ''
+                userStatement: "That sounds like you're keeping an open mind and trying to get the most out of it right?",
+                botResponse: 'Yes these events can be full on and I want to just explore what it has to offer',
+                commentary: 'With this conversation, you can see that its starting to gain momentum. The reason is because you are listening to what Samantha is saying and not trying to talk about yourself.'
               },
               BAB: {
-                userStatement: 'userStatementBAB',
-                botResponse: 'responseBAB',
-                commentary: ''
+                userStatement: "That sounds similar to me, I'm excited for the talk on dinosaurs. Are you attending that talk?",
+                botResponse: "Oh I didn't realise they were doing that! No, but I'd like to join if I can.",
+                commentary: 'Whilst the conversation went well. You are offering a solution rather than hearing what Samantha has to say'
               }
           }, // BA
           BB: {
-            userStatement: 'userStatementBB',
-            botResponse: 'responseBB',
-            commentary: '',
+            userStatement: "I'm seeking to network and meet people at this event.",
+            botResponse: "That's good. Have you been networking for long?",
+            commentary: 'This can be a common thing to say when you are first starting out. But you are moving the conversation to yourself',
               BBA: {
-                userStatement: 'userStatementBBA',
-                botResponse: 'responseBBA',
-                commentary: ''
+                userStatement: 'I have just started and I am practising how to do it',
+                botResponse: 'That is great. Hope it all works out for you.',
+                commentary: 'This is a good first conversation but next time, try to include the person you are speaking to. '
               },
               BBB: {
-                userStatement: 'userStatementBBB',
-                botResponse: 'responseBBB',
-                commentary: ''
+                userStatement: 'This is my first event',
+                botResponse: 'Ah very good. Well good luck!',
+                commentary: 'In this response, you have given a short reply, which is quite abrupt. Try to give a broader reply'
               } // BBB
           } // BB
       } // B

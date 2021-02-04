@@ -1,5 +1,6 @@
 import React from 'react';
 import '../index.css';
+import axios from 'axios';
 
 // Bootstrap
 import Container from 'react-bootstrap/Container';
@@ -34,17 +35,25 @@ class PlayerChat extends React.Component {
             });
 
             // perform an axios via a fetch function
-            // fetchWatson = () => {
-            //     axios.get(BASE_URL,{
-            //         params: 'this is a test string'
-            //     })
-            //     .then(res => {
-            //         // create a variable that extracts the json data, convert to strings and then set the state
-            //         this.setState({
-            //             watson: [...this.state.watson, //variable]
-            //         })
-            //     })
-            // };
+            const fetchWatson = () => {
+                console.log('fetchWatson');
+                axios.get(BASE_URL,{
+                    params: {
+                        text: this.state.currentBranch[userChoice].userStatement
+                        // text: 'this is fine'
+                    }
+                })
+                .then(res => {
+                    const watsonResponse = res.data.result.document_tone.tones
+                    console.log('Watson Response: ', watsonResponse)
+                    // console.log([watsonResponse[0].score, watsonResponse[0].tone_name]);
+                    // create a variable that extracts the json data, convert to strings and then set the state
+                    if(watsonResponse.length > 0){
+                    this.setState({watson: [watsonResponse[0].score, watsonResponse[0].tone_name]})
+                    }
+                })
+            };
+            fetchWatson();
 
         } // userChoice()
 
@@ -148,7 +157,8 @@ class PlayerChat extends React.Component {
                             <div>
                                 <Card.Body>
                                     <Card.Title>IBM Watson's Thoughts:</Card.Title>
-                                        <Card.Text>IBM Data</Card.Text>
+                                        <Card.Text>Tone of Voice: {this.state.watson[1]}</Card.Text>
+                                        <Card.Text>Score: {this.state.watson[0]}</Card.Text>
                                 </Card.Body>
                             </div>
                         </Card>
