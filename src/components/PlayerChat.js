@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 
 class PlayerChat extends React.Component {
@@ -18,7 +19,6 @@ class PlayerChat extends React.Component {
         commentary: []
       }
    
-    // TODO: Make this dry also
        userChoice = (userChoice) => {
             
             const scenario = this.props.scenarioTrees;
@@ -30,7 +30,21 @@ class PlayerChat extends React.Component {
                 commentary: [...this.state.commentary, this.state.currentBranch[userChoice].commentary]
             });
 
+            // perform an axios via a fetch function
+            fetchWatson = () => {
+                
+            }
+
         } // userChoice()
+
+        handleClickReset = (ev) => {
+            ev.preventDefault();
+            this.setState({botResponse: 'Samantha.AI is helping itself to a cup of coffee when you approach...'});
+            this.setState({userHistory: []});
+            this.setState({botHistory: []});
+            this.setState({currentBranch: this.props.scenarioTrees});
+            this.setState({commentary: []});
+        };
 
 
     render(){
@@ -123,9 +137,18 @@ class PlayerChat extends React.Component {
                             <div>
                                 <Card.Body>
                                     <Card.Title>IBM Watson's Thoughts:</Card.Title>
+                                        <Card.Text>IBM Data</Card.Text>
                                 </Card.Body>
                             </div>
                         </Card>
+                        </Col>
+                    </Row>
+                </Container>
+                <Container>
+                    <Row>
+                    <Col xs={12}></Col>
+                        <Col xs={{order: 12}}>
+                            <Button className="reset" onClick={this.handleClickReset}>Reset</Button>
                         </Col>
                     </Row>
                 </Container>
