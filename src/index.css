@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grathyscale;
   background-color: #212529 !important;
   color: white !important;
-  text-align: center;
+  /* text-align: center; */
 }
 
 

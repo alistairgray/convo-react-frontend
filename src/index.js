@@ -25,7 +25,7 @@ const scenarioTrees = {
                 commentary: "The conversation so far is still like an interview"
               },
               AAB: {
-                userStatement: 'userStatementAAB',
+                userStatement: 'Very well thatHey ',
                 botResponse: 'responseAAB',
                 commentary: ''
               }
