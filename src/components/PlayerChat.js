@@ -8,6 +8,8 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
+const BASE_URL = 'http://localhost:3001/watson'
+
 
 class PlayerChat extends React.Component {
     
@@ -16,7 +18,8 @@ class PlayerChat extends React.Component {
         userHistory: [],
         botHistory: [],
         currentBranch: this.props.scenarioTrees,
-        commentary: []
+        commentary: [],
+        watson: []
       }
    
        userChoice = (userChoice) => {
@@ -31,9 +34,17 @@ class PlayerChat extends React.Component {
             });
 
             // perform an axios via a fetch function
-            fetchWatson = () => {
-                
-            }
+            // fetchWatson = () => {
+            //     axios.get(BASE_URL,{
+            //         params: 'this is a test string'
+            //     })
+            //     .then(res => {
+            //         // create a variable that extracts the json data, convert to strings and then set the state
+            //         this.setState({
+            //             watson: [...this.state.watson, //variable]
+            //         })
+            //     })
+            // };
 
         } // userChoice()
 

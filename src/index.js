@@ -18,11 +18,11 @@ const scenarioTrees = {
           AA: {
             userStatement: 'My name is Theodore',
             botResponse: "Hi Theodore, I'm Samantha",
-            commentary: '',
+            commentary: "You're continuing with a neutral tone",
               AAA: {
                 userStatement: 'What brings you to this event?',
                 botResponse: "I'm here to meet people and learn",
-                commentary: ''
+                commentary: "The conversation so far is still like an interview"
               },
               AAB: {
                 userStatement: 'userStatementAAB',
