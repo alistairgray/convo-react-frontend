@@ -9,7 +9,8 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-const BASE_URL = 'http://localhost:3001/watson'
+// const BASE_URL = 'http://localhost:3001/watson'
+const BASE_URL = 'https://convo-app-backend.herokuapp.com/watson'
 
 
 class PlayerChat extends React.Component {
